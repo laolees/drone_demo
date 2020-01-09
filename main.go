@@ -2,9 +2,9 @@ package main
 
 import (
 	"encoding/json"
-	"fmt"
+	//"fmt"
 	"io"
-	"io/ioutil"
+	//"io/ioutil"
 	"log"
 	"net/http"
 	"path"

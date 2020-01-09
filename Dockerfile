@@ -10,7 +10,7 @@ RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.ustc.edu.cn/g' /etc/apk/repositorie
   apk add --update tzdata && \
   rm -rf /var/cache/apk/*
 
-ADD demo-app.tar.gz /home/
+ADD demo-app /home/
 
 ENV TZ=Asia/Shanghai
 

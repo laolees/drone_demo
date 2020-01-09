@@ -5,7 +5,7 @@ steps:
   - name: linter
     image: golang:latest
     environment:
-      GOPROXY: https://mirrors.aliyun.com/goproxy/
+      GOPROXY: https://goproxy.io
     commands:
       - go get -u github.com/golangci/golangci-lint/cmd/golangci-lint
       - golangci-lint run
@@ -13,7 +13,7 @@ steps:
   - name: build
     image: golang:latest
     environment:
-      GOPROXY: https://mirrors.aliyun.com/goproxy/
+      GOPROXY: https://goproxy.io
     commands:
       - CGO_ENABLED=0 go build -o demo-app
 
